@@ -1,0 +1,135 @@
+@import "./colors";
+
+.CTA {
+	border: none;
+	text-align: center;
+	background-color: $sunset;
+	border-radius: 10px;
+	padding: 15px 20px;
+	color: $cloud;
+	margin: 15px 0;
+	width: 200px;
+	font-size: 1.3rem;
+	font-weight: 500;
+	box-shadow: 2px 2px 5px rgb(179, 179, 179);
+	animation: out 0.3s 1 forwards ease-in-out;
+	align-items: center;
+	letter-spacing: 0.5px;
+}
+
+.CTA .ctaLink {
+	color: $moonlight;
+}
+
+.CTA:hover {
+	background-color: #df7446;
+	animation: in 0.3s 1 forwards ease-in-out;
+}
+
+.new-question-button {
+	border: none;
+	background-color: $sunset;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: $moonlight;
+	margin: 15px 0;
+	min-width: 130px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	box-shadow: 2px 2px 5px rgb(179, 179, 179);
+	animation: out 0.3s 1 forwards ease-in-out;
+
+	&:hover {
+		background-color: #df7446;
+		animation: in 0.3s 1 forwards ease-in-out;
+	}
+}
+
+@keyframes in {
+	0% {
+		//transform: translateY(0);
+		border-radius: 10px;
+	}
+
+	100% {
+		//transform: translateY(-8px);
+		border-radius: 40px;
+	}
+}
+
+@keyframes out {
+	0% {
+		//transform: translateY(-8px);
+		border-radius: 40px;
+	}
+
+	100% {
+		//transform: translateY(0);
+		border-radius: 10px;
+	}
+}
+
+.primaryButton {
+	border: none;
+	background-color: $sunset;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: $moonlight;
+	margin: 15px 0;
+	min-width: 130px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+
+	&:hover {
+		background-color: $moonlight;
+		color: $sunset;
+		border: 2px solid $sunset;
+	}
+}
+
+.secondaryButton {
+	border: 2px solid $sunset;
+	background-color: $moonlight;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: $sunset;
+	margin: 15px 0;
+	min-width: 140px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+
+.secondaryButton:hover {
+	background-color: $sunset;
+	color: $cloud;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.answer-button {
+	background-color: transparent;
+	border: none;
+	margin-left: 3rem;
+	padding: 0.5rem;
+	color: $sunset;
+	font-family: "Sarabun", sans-serif;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.answer-button-dark {
+	background-color: transparent;
+	border: none;
+	margin-left: 3rem;
+	padding: 0.5rem;
+	color: $darkSunset;
+	font-family: "Sarabun", sans-serif;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

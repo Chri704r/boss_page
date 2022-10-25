@@ -1,0 +1,207 @@
+@import "/src/sass/base/colors";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-wrapper {
+	position: fixed;
+	display: flex;
+	top: 0;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	z-index: 100;
+}
+
+.Navbar {
+	z-index: 100;
+	height: 3.5rem;
+	width: 100vw;
+	margin: 0 20px;
+	padding: 10px 0 5px;
+	border-bottom: solid 1.5px rgb(206, 206, 206);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logoContainer {
+		height: 100%;
+		margin-left: 60px;
+		padding: 0;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	.rightWrapper {
+		display: flex;
+		height: 3rem;
+		align-items: center;
+		margin-right: 40px;
+
+		.nav-menu {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+			list-style: none;
+			margin-right: 15px;
+
+			.nav-links {
+				text-decoration: none;
+				color: $nightsky;
+
+				&:hover {
+					font-weight: bold;
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+
+			.home,
+			.about {
+				margin-left: 1px;
+				margin-right: 1px;
+				font-weight: normal;
+			}
+
+			.contact {
+				margin-left: 2px;
+				margin-right: 2px;
+				font-weight: normal;
+			}
+
+			.forum {
+				margin-left: 0.8px;
+				margin-right: 0.8px;
+				font-weight: normal;
+			}
+
+			.activeLink {
+				display: block;
+				font-weight: bold;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.fill {
+				border: solid 1px $nightsky;
+				padding: 0.5rem 1rem !important;
+				border-radius: 5px;
+				font-weight: normal !important;
+
+				&:hover {
+					background-color: $nightsky;
+					font-weight: normal;
+					color: $moonlight;
+				}
+			}
+		}
+
+		.profilePic {
+			height: 45px;
+			width: 45px;
+			border-radius: 50%;
+			background-color: $rain;
+			margin-right: 1rem;
+			float: right;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			span {
+				color: $nightsky;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.activeLink::after {
+	content: "";
+	display: block;
+	position: relative;
+	top: 0.93rem;
+	width: 100%;
+	height: 3px;
+	background-color: $nightsky;
+}
+
+@media screen and (max-width: 760px) {
+	.Navbar {
+		position: fixed;
+		top: 0;
+		background-color: $moonlight  !important;
+
+		.logoContainer {
+			margin-left: 10px;
+		}
+
+		.rightWrapper {
+			margin-right: 0px;
+
+			#btn-login {
+				margin-right: 15px;
+			}
+
+			.nav-menu {
+				display: flex !important;
+				position: absolute !important;
+				flex-direction: column;
+				background-color: $moonlight;
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				top: 3.5rem;
+				left: 0;
+				padding-top: 5vw;
+				margin-right: 60px;
+
+				.nav-links {
+					font-size: 2rem;
+					line-height: 70px;
+				}
+			}
+
+			.nav-menu.not-active {
+				animation: menu-out 0.8s 1 forwards cubic-bezier(0.77, 0.56, 0.44, 0.99);
+			}
+
+			.nav-menu.active {
+				animation: menu-in 0.8s 1 forwards cubic-bezier(0.77, 0.56, 0.44, 0.99);
+			}
+		}
+
+
+
+		@keyframes menu-in {
+			0% {
+				transform: translateX(100vw);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes menu-out {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(100vw);
+			}
+		}
+
+
+
+		.activeLink::after {
+			display: none;
+		}
+	}
+}

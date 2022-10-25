@@ -1,0 +1,175 @@
+@import "/src/sass/base/colors";
+@import "/src/sass/base/buttons";
+
+#back-button {
+	position: absolute;
+	left: 2rem;
+	top: 10px;
+	border: 2px solid $nightsky;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: $moonlight;
+	content: "";
+	background-image: url('/back_arrow.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&:hover {
+		border: 3px solid $nightsky;
+	}
+}
+
+.content-wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 65% 35%;
+
+	h3 {
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.login-input {
+		width: 100%;
+		border: solid 2px $sunset;
+		border-radius: 24px;
+		font-size: 0.9rem;
+		padding: 8px 1.2rem;
+	}
+
+
+
+	.login-input:focus {
+		outline: none;
+		border: 2px solid $nightsky;
+	}
+
+	.login-input:-webkit-autofill {
+		box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+		-webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+		transition: background-color 5000s ease-in-out 0s;
+	}
+
+	.login-label {
+		margin-left: 1.2rem;
+		margin-bottom: 0.5rem;
+		font-weight: bold;
+	}
+
+	.input-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.name-input-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	.button-wrapper {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.login-section {
+		margin-bottom: 2rem;
+		padding: 0 2rem;
+		margin-top: auto;
+		margin-bottom: auto;
+
+		h3 {
+			margin-bottom: 0px;
+		}
+	}
+
+	.blue-section {
+		background-color: $rain;
+		padding: 1rem 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		p {
+			max-width: 450px;
+			margin: 0 auto;
+		}
+	}
+
+	.error-wrapper {
+		width: 100%;
+
+		.error-center {
+			color: red;
+			width: 100%;
+			text-align: center;
+		}
+
+		.error {
+			color: red;
+			width: 100%;
+			margin-left: 1rem;
+		}
+	}
+
+	.showError {
+		display: block;
+	}
+
+	.hideError {
+		display: none;
+	}
+
+	.error-border {
+		border: solid 2px red;
+	}
+
+}
+
+
+@media screen and (min-width: 900px) {
+	#back-button {
+		left: unset;
+		right: 90vw;
+	}
+
+	.content-wrapper {
+		height: 100vh;
+		margin-top: 0vh;
+		padding-top: 0;
+		grid-template-rows: 1fr;
+		grid-template-columns: 50% 50%;
+
+		.login-section {
+			margin-top: auto;
+			margin-bottom: auto;
+			height: 50vh;
+			padding: 1rem 4rem;
+
+			form {
+				max-width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			p {
+				margin-bottom: 0px;
+			}
+		}
+
+		.signup-section form {
+			max-width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

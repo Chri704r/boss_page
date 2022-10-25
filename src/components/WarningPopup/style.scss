@@ -1,0 +1,78 @@
+.modal_container_info{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    .modal_background{
+        background:rgba(0, 0, 0, 0.588);
+        width: 100%;
+        height: 100%;
+        .modal{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            width: 90%;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+            h2{
+                margin: 40px auto 30px;
+                font-size: 1.7rem;
+                text-align: center;
+            }
+            p{
+                margin: 0 auto;
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 33px;
+            }
+            .button_wrapper{
+                margin: 40px auto 20px;
+                max-width: 300px;
+                display: flex;
+                gap: 10px;
+                button{
+                    display: block;
+                    margin: 15px auto;
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .modal_container_info{
+      .modal{
+          width: 55% !important;
+          min-height: 40%;
+      }
+    }
+  }
+
+
+  .modal_container_info.hiding{
+    display: none;
+    animation: quickScaleDown 0s .5s linear forwards;
+    .modal_background {
+        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        .modal {
+           animation: scaleDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+}
+.modal_container_info.showing{
+    display: inline;
+    transform:scale(1);
+    .modal_background {
+        background:rgba(0,0,0,.0);
+        animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        .modal {
+          opacity:0;
+          animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+}

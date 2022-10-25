@@ -1,0 +1,132 @@
+{
+	"questions": [
+		{
+			"id": "1",
+			"title": "Min BOSS ser forkert ud",
+			"content": "Min BOSS ser forkert ud og jeg kan ikke se hvilke bøger eleven har.",
+			"createdAt": "12-10-2022 13:48",
+			"user_id": "1",
+			"categories": [{ "category": "Udlån" }, { "category": "Andet" }],
+			"deleted": 0,
+			"account": {
+				"firstname": "Lone",
+				"lastname": "Jensen"
+			},
+			"answers": [
+				{
+					"account": {
+						"firstname": "Torben",
+						"lastname": "Piilmann"
+					},
+					"id": "33",
+					"content": "Gå ind under ”Depot Ad.” Og vælg ”Nulstil rudeopdeling",
+					"verified": 1,
+					"created": "12-07-2021 12:48",
+					"comments": [
+						{
+							"account": {
+								"firstname": "Lone",
+								"lastname": "Jørgensen"
+							},
+							"id": "commentId1",
+							"content": "@Torben Det virkede, men efter at BOSS er genstartet ser den igen forkert ud.",
+							"createdAt": "12-07-2021 12:48",
+							"user_id": 1
+						},
+						{
+							"account": {
+								"firstname": "Torben",
+								"lastname": "Piilmann"
+							},
+							"id": "commentId1",
+							"content": "@Lone Husk at svare ja til at gemme lokale ændringer når du lukker BOSS",
+							"createdAt": "12-07-2021 12:48",
+							"user_id": 1
+						}
+					]
+				},
+				{
+					"account": {
+						"firstname": "Bo",
+						"lastname": "Larsen"
+					},
+					"id": "33",
+					"content": "Jeg har samme problem",
+					"verified": 0,
+					"created": "15-07-2021 13:46",
+					"comments": []
+				}
+			]
+		},
+		{
+			"id": "1",
+			"title": "Elever kommer ikke ind ved elevopdatering",
+			"content": "Der kommer ingen nye elever ind i BOSS når jeg laver elevopdatering. ",
+			"createdAt": "12-10-2022 13:48",
+			"user_id": "1",
+			"categories": [{ "category": "System" }, { "category": "Ønsker" }],
+			"deleted": 0,
+			"account": {
+				"firstname": "Bente",
+				"lastname": "Larsen"
+			},
+			"answers": ["1", "2", "3"]
+		},
+		{
+			"id": "1",
+			"title": " Fejl ved overførsel af udlån",
+			"content": "Ved overførsel af udlån til UMS meldes en fejl ”DTD prohibited",
+			"createdAt": "12-10-2022 13:48",
+			"user_id": "1",
+			"categories": [{ "category": "Udlån" }, { "category": "System" }, { "category": "Ønsker" }],
+			"deleted": 1,
+			"account": {
+				"firstname": "Bente",
+				"lastname": "Larsen"
+			},
+			"answers": ["2"]
+		},
+		{
+			"id": "1",
+			"title": "Kan BOSS bruges til udlån af nøgler?",
+			"content": "Vi har nogle nøgler vi ind imellem låner til elever, men det kan være svært at få dem tilbage. Kan boss bruges til det, når der ingen stregkode er på nøglerne?",
+			"createdAt": "12-10-2022 13:48",
+			"user_id": "1",
+			"categories": [{ "category": "Udlån" }, { "category": "System" }, { "category": "Ønsker" }],
+			"deleted": 0,
+			"account": {
+				"firstname": "Søren",
+				"lastname": "Nielsen"
+			},
+			"answers": ["2"]
+		},
+		{
+			"id": "1",
+			"title": "Eksemplar baseret udlån",
+			"content": "Hvad kræver det at anvende ”eksemplar baseret udlån",
+			"createdAt": "12-10-2022 13:48",
+			"user_id": "1",
+			"categories": [{ "category": "System" }],
+			"deleted": 0,
+			"account": {
+				"firstname": "Bo",
+				"lastname": "Hansen"
+			},
+			"answers": ["2", "4", "7", "3"]
+		},
+		{
+			"id": "1",
+			"title": "BOSS hjemkalder bøger før eksamen",
+			"content": "BOSS vil kalde bøger hjem for en masse elever, men de har ikke været til eksamen endnu. Vi anvender LUDUS.",
+			"createdAt": "12-10-2022 13:48",
+			"user_id": "1",
+			"categories": [{ "category": "Udlån" }],
+			"deleted": 0,
+			"account": {
+				"firstname": "Sofie",
+				"lastname": "Søgaard"
+			},
+			"answers": []
+		}
+	]
+}

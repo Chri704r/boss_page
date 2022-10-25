@@ -1,0 +1,244 @@
+@import '../../sass/base/colors';
+
+.modal_container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    .modal_background{
+        background:rgba(0,0,0,.8);
+        width: 100%;
+        height: 100%;
+        .modal{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            width: 95%;
+            height: 98%;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+            h2{
+                margin: 30px auto;
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            #close-popup-button{
+                float: right;
+                width: 45px;
+                height: 45px;
+                border-radius: 30px;
+                background-color: $moonlight;
+                border: 2px solid $nightsky;
+                color: $nightsky;
+                margin-top: 10px;
+                &:hover{
+                  border: 3px solid $nightsky;
+                }
+            }
+            h3{
+                margin-top: 20px;
+            }
+            .form_wrapper{
+                max-width: 700px;
+                margin: 0 auto;
+            }
+            .input_wrapper{
+                margin-bottom: 25px;
+                display: flex;
+                flex-direction: column;
+                input, textarea{
+                    width: 100%;
+                    border: 1px solid $fog;
+                    border-radius: 20px;
+                    height: 35px;
+                    padding: 2px 13px;
+                    margin-top: 10px;
+                }
+                textarea{
+                    height: 7rem;
+                    padding: 8px 13px;
+                }
+                label{
+                    text-transform: initial;
+                    font-size: 1rem;
+                }
+                input:focus,
+                textarea:focus {
+                outline: none;
+                border: 1px solid $nightsky;
+		        }
+                
+            }
+            .info_txt {
+                color: $fog;
+                margin-bottom: 10px;
+            }
+            .cat_wrapper{
+                margin: 10px 0;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+            .opret_button{
+                float: bottom;
+                display: block;
+                margin: 50px auto 10px;
+            }
+        }
+    }
+}
+
+.error_message{
+  font-size: 0.9rem;
+  margin: 0;
+  color: red;
+  position: absolute;
+  left: 15px;
+  &.subject{
+   top: 155px;
+  }
+  &.content{
+    top: 323px;
+  }
+  &.error_hide{
+    display: none;
+  }
+}
+
+
+
+.modal_container.hiding{
+    display: none;
+    animation: quickScaleDown 0s .5s linear forwards;
+    .modal_background {
+        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        .modal {
+           animation: scaleDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+       + .forum_container {
+        animation: scaleForward .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+}
+.modal_container.showing{
+    display: inline;
+    transform:scale(1);
+    .modal_background {
+        background:rgba(0,0,0,.0);
+        animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        .modal {
+          opacity:0;
+          animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+       + .forum_container {
+        animation: scaleBack .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+}
+
+
+@media only screen and (min-width: 760px) {
+  .modal_container{
+    .modal{
+        width: 80% !important;
+        height: 95% !important;
+        padding: 10px 40px !important;
+        .opret_button{
+            margin: 60px 0 10px !important;
+        }
+    }
+  }
+}
+
+@media only screen and (min-height: 830px){
+  .modal_container{
+    .modal{
+        height: 85% !important;
+    }
+  }
+}
+
+@media only screen and (min-height: 1020px){
+  .modal_container{
+    .modal{
+        height: 70% !important;
+    }
+}
+}
+
+
+@keyframes fadeIn {
+    0% {
+      background:rgba(0,0,0,.0);
+    }
+    100% {
+      background:rgba(0,0,0,.7);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      background:rgba(0,0,0,.7);
+    }
+    100% {
+      background:rgba(0,0,0,.0);
+    }
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform:scale(.8) translate(-60%, 0%);
+      opacity: 0;
+    }
+    100% {
+      transform:scale(1) translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform:scale(1) translate(-50%, -50%);
+      opacity:1;
+    }
+    100% {
+      transform:scale(.8) translate(-60%, 0%);
+      opacity:0;
+    }
+  }
+
+  @keyframes quickScaleDown {
+    0% {
+      transform:scale(1);
+    }
+    99.9% {
+      transform:scale(1);
+    }
+    100% {
+      transform:scale(0);
+    }
+  }
+
+  @keyframes scaleBack {
+    0% {
+      transform:scale(1);
+    }
+    100% {
+      transform:scale(0.95);
+    }
+  }
+  
+  @keyframes scaleForward {
+    0% {
+      transform:scale(0.95);
+      z-index: -10;
+    }
+    100% {
+      transform:scale(1);
+      z-index: -10;
+    }
+  }

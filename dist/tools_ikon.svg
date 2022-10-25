@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="99.75" cy="100.25" r="95.75" style="fill: none; stroke: #ba5a31; stroke-miterlimit: 10; stroke-width: 6px;"/>
+  <g>
+    <path d="M130.0863,147.2884v-62.9047s.9279-4.8317-4.6395-4.8317H50.5023s-3.9265-.9279-3.9265,3.7116v62.035s-.9279,5.7013,3.7116,5.7013H125.6315s4.4548,0,4.4548-3.7116Z" style="fill: none; stroke: #ba5a31; stroke-miterlimit: 10; stroke-width: 6px;"/>
+    <rect x="48.4315" y="80.48" width="81.6548" height="12.0626" style="fill: #ba5a31;"/>
+    <circle cx="54.4629" cy="84.6555" r="3.2476" style="fill: #fff;"/>
+    <circle cx="63.7418" cy="84.6555" r="3.2476" style="fill: #fff;"/>
+    <circle cx="73.9487" cy="84.6555" r="3.2476" style="fill: #fff;"/>
+    <rect x="81.8358" y="83.2637" width="44.539" height="2.7837" style="fill: #fff;"/>
+    <path d="M136.5816,121.3074h10.5036s3.4148-.9279,3.4148-3.7116V54.6537s-.4639-4.3303-5.1034-4.3303H71.4786s-4.0252,.0114-4.4892,2.7894-.4639,19.4801-.4639,19.4801" style="fill: none; stroke: #ba5a31; stroke-miterlimit: 10; stroke-width: 7px;"/>
+    <rect x="68.8452" y="51.7152" width="81.6548" height="12.0626" style="fill: #ba5a31;"/>
+    <circle cx="84.1555" cy="55.8908" r="3.2476" style="fill: #fff;"/>
+    <circle cx="74.8765" cy="55.8908" r="3.2476" style="fill: #fff;"/>
+    <circle cx="94.3623" cy="55.8908" r="3.2476" style="fill: #fff;"/>
+    <rect x="102.2495" y="54.4989" width="44.539" height="2.7837" style="fill: #fff;"/>
+  </g>
+</svg>

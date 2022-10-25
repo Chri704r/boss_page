@@ -1,0 +1,93 @@
+@import '../../sass/base/colors';
+
+.sort_container {
+    display: block;
+    border: 2px solid $nightsky;
+    border-radius: 30px;
+    padding: 2.5px 25px;
+    width: 420px;
+    height: 40px;
+    position: relative;
+    left: 160px;
+    top: 55px;
+    .sort_wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 34px;
+
+        p {
+            cursor: pointer;
+            &:hover {
+                font-weight: bold;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+
+        .newest,
+        .oldest {
+            margin-left: 1.2px;
+            margin-right: 1.2px;
+        }
+
+        .unanswered,
+        .answered {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+
+    .active_sort {
+        background-color: $nightsky;
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 30px;
+        margin-left: 0;
+        transition: .3s ease-in-out;
+    }
+}
+
+.active {
+    color: $moonlight;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.newest.active~.active_sort {
+    margin-left: -1px !important;
+}
+
+.oldest.active~.active_sort {
+    margin-left: 92px !important;
+}
+
+.unanswered.active~.active_sort {
+    margin-left: 196px !important;
+    width: 105px;
+}
+
+.answered.active~.active_sort {
+    margin-left: 307px !important;
+    width: 110px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .sort_container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .sort_container {
+        left: 0;
+    }
+}

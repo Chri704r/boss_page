@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 182">
+  <g id="trash_bottom">
+    <path d="M23.5351,53.3628l15.7836,116.7984c.2197,1.6259,1.6076,2.8388,3.2483,2.8388h91.8329c.8092,0,1.4969-.5915,1.6178-1.3917l17.8682-118.2201c.1496-.9898-.6168-1.8807-1.6178-1.8807H25.1566c-.9907,0-1.7541,.8735-1.6215,1.8553Z" style="fill: #afafaf;"/>
+    <line x1="88.1352" y1="73.6725" x2="88.7124" y2="150.9522" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 7px;"/>
+    <line x1="121.5925" y1="73.841" x2="114.3595" y2="150.7837" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 7px;"/>
+    <line x1="53.7808" y1="73.8256" x2="60.6786" y2="150.7991" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 7px;"/>
+  </g>
+  <g id="trash_top">
+    <path d="M16.7172,43.2985H159.5136l.0394-11.4925s1.6418-9.8507-14.7761-9.8507H28.7586s-12.0414-.8634-12.0414,8.5981v12.7451Z" style="fill: #afafaf;"/>
+    <path d="M60.2247,22.7761v-4.3637s0-10.4124,9.8507-10.4124h37.7612s9.8507,0,9.8507,9.8507,0,4.9254,0,4.9254" style="fill: none; stroke: #afafaf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 6px;"/>
+  </g>
+</svg>

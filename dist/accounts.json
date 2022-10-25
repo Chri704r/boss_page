@@ -1,0 +1,18 @@
+{
+	"accounts": [
+		{
+			"id": "1",
+			"accountTypeId": "1",
+			"email": "lone@gmail.com",
+			"password": "lone1234",
+			"firstname": "Lone",
+			"lastname": "Jensen"
+		},
+		{
+			"id": "2",
+			"accountTypeId": "2",
+			"email": "christine@gmail.com",
+			"password": "christine1234"
+		}
+	]
+}
